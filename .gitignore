@@ -1,0 +1,36 @@
+# ---- Sensitive credentials ----
+.opengwas_token
+*.token
+*_token*
+
+# ---- Individual-level / restricted data (NEVER commit HRS microdata) ----
+*.dta
+*.csv
+*.sav
+*.sas7bdat
+*.RData
+*.rds
+# GWAS summary stats (large / redistribute per source license)
+*.vcf
+*.vcf.gz
+*.vcf.gz.tbi
+*.tsv
+
+# ---- Outputs ----
+output/
+figures/
+results/
+*.png
+*.pdf
+
+# ---- Language caches ----
+__pycache__/
+*.pyc
+.Rhistory
+.RData
+.Rproj.user/
+.ipynb_checkpoints/
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
